@@ -1,3 +1,7 @@
+//Name: Shreya Chaturvedi
+//PRN: 23070126123
+//Class: AIML B2
+
 import java.util.Scanner;
 
 class Main1 {
