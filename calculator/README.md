@@ -10,7 +10,7 @@ Calculator: Contains methods for arithmetic and array operations, such as sumOfA
 Main1: The entry point of the program, which implements a menu using a while loop and a switch-case structure to call appropriate methods based on user choice.
 
 
-*How It Works*
+**How It Works**
 
 Users are prompted to select an operation from a menu. For example, choosing "Fibonacci series" allows the user to input the number of terms to generate.
 
