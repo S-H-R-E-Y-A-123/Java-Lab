@@ -56,4 +56,9 @@ class ArrayFunctions {
     List<Integer> convertToArrayList(int[] array) {
         return Arrays.stream(array).boxed().toList();
     }
+
+    // Function to convert an ArrayList to an array
+    int[] convertToArray(List<Integer> list) {
+        return list.stream().mapToInt(Integer::intValue).toArray();
+    }
 }
