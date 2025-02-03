@@ -51,4 +51,9 @@ class ArrayFunctions {
         System.out.println("Smallest difference is between index " + minIndex + " and " + (minIndex + 1));
         return minIndex;
     }
+
+    // Function to convert an array to an ArrayList
+    List<Integer> convertToArrayList(int[] array) {
+        return Arrays.stream(array).boxed().toList();
+    }
 }
