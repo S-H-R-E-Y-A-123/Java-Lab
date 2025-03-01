@@ -11,4 +11,10 @@ class Cube extends Shape {
     public double calculateArea() {
         return 6 * dim_one * dim_one;
     }
+
+    // Method to calculate the volume of a cube
+    @Override
+    public double calculateVolume() {
+        return dim_one * dim_one * dim_one;
+    }
 }
