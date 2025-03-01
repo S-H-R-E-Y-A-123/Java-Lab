@@ -51,7 +51,7 @@ class StudentOperations {
         }
         return null;
     }
-    
+
     // Update student details
     public boolean updateStudent(long prn, Scanner scan) {
         Student student = searchByPRN(prn);
@@ -75,5 +75,19 @@ class StudentOperations {
         System.out.println("Student details updated successfully!");
         return true;
     }
-}
 
+    // Delete student by PRN
+    public boolean deleteStudent(long prn) {
+        Iterator<Student> iterator = students.iterator();
+        while (iterator.hasNext()) {
+            Student student = iterator.next();
+            if (student.getPRN() == prn) {
+                iterator.remove();
+                System.out.println("Student with PRN " + prn + " deleted.");
+                return true;
+            }
+        }
+        System.out.println("Student with PRN " + prn + " not found.");
+        return false;
+    }
+}
