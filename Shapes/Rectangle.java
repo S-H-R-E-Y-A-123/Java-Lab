@@ -6,4 +6,10 @@ class Rectangle extends Shape {
         this.dim_one = length;
         this.dim_two = width;
     }
+
+    // Method to calculate the area of a rectangle
+    @Override
+    public double calculateArea() {
+        return dim_one * dim_two;
+    }
 }
