@@ -5,4 +5,10 @@ class Sphere extends Shape {
         super("Sphere");
         this.dim_one = radius;
     }
+
+    // Method to calculate the surface area of a sphere
+    @Override
+    public double calculateArea() {
+        return 4 * Math.PI * dim_one * dim_one;
+    }
 }
