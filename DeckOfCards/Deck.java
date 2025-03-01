@@ -19,4 +19,12 @@ class Deck {
             }
         }
     }
+
+    // Displays all cards in the deck
+    public void printDeck() {
+        System.out.println("\n------ FULL DECK ------");
+        for (Card card : deck) {
+            System.out.println(card);
+        }
+    }
 }
