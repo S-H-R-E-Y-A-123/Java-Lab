@@ -46,4 +46,20 @@ class Deck {
             }
         }
     }
+
+    // Compares two cards by rank
+    public void compareCard(int index1, int index2) {
+        if (index1 >= 0 && index1 < deck.size() && index2 >= 0 && index2 < deck.size()) {
+            Card card1 = deck.get(index1);
+            Card card2 = deck.get(index2);
+
+            if (card1.getRank().equals(card2.getRank())) {
+                System.out.println("Both cards have the same rank: " + card1.getRank());
+            } else {
+                System.out.println("Different ranks: " + card1 + " vs " + card2);
+            }
+        } else {
+            System.out.println("Invalid indices.");
+        }
+    }
 }
