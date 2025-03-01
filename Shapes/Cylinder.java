@@ -6,4 +6,10 @@ class Cylinder extends Shape {
         this.dim_one = radius;
         this.dim_two = height;
     }
+
+    // Method to calculate the surface area of a cylinder
+    @Override
+    public double calculateArea() {
+        return 2 * Math.PI * dim_one * (dim_one + dim_two);
+    }
 }
