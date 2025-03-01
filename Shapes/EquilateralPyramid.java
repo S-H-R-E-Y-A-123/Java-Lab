@@ -19,4 +19,10 @@ class EquilateralPyramid extends Shape {
     public double calculateVolume() {
         return (1.0 / 3.0) * dim_one * dim_one * dim_two;
     }
+
+    // Method to calculate the perimeter of the square base
+    @Override
+    public double calculatePerimeter() {
+        return 4 * dim_one;
+    }
 }
