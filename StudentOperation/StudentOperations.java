@@ -23,4 +23,32 @@ class StudentOperations {
             student.display();
         }
     }
+
+    // Search student by PRN
+    public Student searchByPRN(long prn) {
+        for (Student student : students) {
+            if (student.getPRN() == prn) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    // Search student by Name
+    public Student searchByName(String name) {
+        for (Student student : students) {
+            if (student.getName().equalsIgnoreCase(name)) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    // Search student by Position (Index)
+    public Student searchByPosition(int pos) {
+        if (pos >= 0 && pos < students.size()) {
+            return students.get(pos);
+        }
+        return null;
+    }
 }
