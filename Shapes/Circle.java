@@ -11,4 +11,10 @@ class Circle extends Shape {
     public double calculateArea() {
         return Math.PI * dim_one * dim_one;
     }
+
+    // Method to calculate the perimeter (circumference) of a circle
+    @Override
+    public double calculatePerimeter() {
+        return 2 * Math.PI * dim_one;
+    }
 }
