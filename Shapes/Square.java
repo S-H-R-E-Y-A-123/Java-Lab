@@ -11,4 +11,10 @@ class Square extends Shape {
     public double calculateArea() {
         return dim_one * dim_one;
     }
+
+    // Method to calculate the perimeter of a square
+    @Override
+    public double calculatePerimeter() {
+        return 4 * dim_one;
+    }
 }
