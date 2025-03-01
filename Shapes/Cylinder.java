@@ -12,4 +12,10 @@ class Cylinder extends Shape {
     public double calculateArea() {
         return 2 * Math.PI * dim_one * (dim_one + dim_two);
     }
+
+    // Method to calculate the volume of a cylinder
+    @Override
+    public double calculateVolume() {
+        return Math.PI * dim_one * dim_one * dim_two;
+    }
 }
