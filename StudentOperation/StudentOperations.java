@@ -51,4 +51,29 @@ class StudentOperations {
         }
         return null;
     }
+    
+    // Update student details
+    public boolean updateStudent(long prn, Scanner scan) {
+        Student student = searchByPRN(prn);
+        if (student == null) {
+            System.out.println("Student with PRN " + prn + " not found.");
+            return false;
+        }
+
+        System.out.println("Enter new name: ");
+        student.setName(scan.nextLine());
+
+        System.out.println("Enter new CGPA: ");
+        student.setCGPA(Double.parseDouble(scan.nextLine()));
+
+        System.out.println("Enter new department: ");
+        student.setDept(scan.nextLine());
+
+        System.out.println("Enter new batch: ");
+        student.setBatch(scan.nextLine());
+
+        System.out.println("Student details updated successfully!");
+        return true;
+    }
 }
+
