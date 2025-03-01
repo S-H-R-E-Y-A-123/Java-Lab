@@ -5,3 +5,10 @@ class Square extends Shape {
         super("Square");
         this.dim_one = side;
     }
+
+    // Method to calculate the area of a square
+    @Override
+    public double calculateArea() {
+        return dim_one * dim_one;
+    }
+}
