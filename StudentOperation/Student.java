@@ -65,4 +65,8 @@ class Student{
 		this.batch = batch;
 	}
 
+	public void display(){
+		System.out.println("Name: " +name+ " PRN: " +prn+ " CGPA: " +CGPA+ " dept: " +dept+ " Batch: " +batch);
+	}
+	
 }
