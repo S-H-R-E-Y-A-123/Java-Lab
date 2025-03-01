@@ -12,4 +12,15 @@ class StudentOperations {
         students.add(student);
         System.out.println("Student Added.");
     }
+
+    // Display all students
+    public void displayStudents() {
+        if (students.isEmpty()) {
+            System.out.println("No students available.");
+            return;
+        }
+        for (Student student : students) {
+            student.display();
+        }
+    }
 }
