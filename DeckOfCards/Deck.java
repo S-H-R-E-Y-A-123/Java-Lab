@@ -36,4 +36,14 @@ class Deck {
             System.out.println("Invalid index. Choose between 0 and " + (deck.size() - 1));
         }
     }
+
+    // Finds all cards from the same suit
+    public void sameCard(String suit) {
+        System.out.println("\n------ CARDS FROM SUIT: " + suit + " ------");
+        for (Card card : deck) {
+            if (card.getSuit().equalsIgnoreCase(suit)) {
+                System.out.println(card);
+            }
+        }
+    }
 }
