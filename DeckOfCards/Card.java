@@ -14,4 +14,9 @@ class Card {
     public String getSuit() {
         return suit;
     }
+
+    @Override
+    public String toString() {
+        return rank + " of " + suit;
+    }
 }
