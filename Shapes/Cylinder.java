@@ -18,4 +18,10 @@ class Cylinder extends Shape {
     public double calculateVolume() {
         return Math.PI * dim_one * dim_one * dim_two;
     }
+
+    // Perimeter is not applicable for a cylinder
+    @Override
+    public double calculatePerimeter() {
+        return 0;
+    }
 }
