@@ -12,4 +12,13 @@ abstract class Shape {
     public void displayShape() {
         System.out.println("\nSelected Shape: " + shapeType);
     }
+
+    // Abstract methods for area and perimeter calculations
+    abstract double calculateArea();
+    abstract double calculatePerimeter();
+    
+    // Volume method with default return for 2D shapes
+    public double calculateVolume() {
+        return 0;
+    }
 }
