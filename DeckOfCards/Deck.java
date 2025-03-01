@@ -62,4 +62,15 @@ class Deck {
             System.out.println("Invalid indices.");
         }
     }
+
+    // Searches for a specific card
+    public void findCard(String rank, String suit) {
+        for (Card card : deck) {
+            if (card.getRank().equalsIgnoreCase(rank) && card.getSuit().equalsIgnoreCase(suit)) {
+                System.out.println("Card found: " + card);
+                return;
+            }
+        }
+        System.out.println("Card not found.");
+    }
 }
