@@ -17,4 +17,10 @@ class Cube extends Shape {
     public double calculateVolume() {
         return dim_one * dim_one * dim_one;
     }
+
+    // Perimeter method for a cube (edge sum)
+    @Override
+    public double calculatePerimeter() {
+        return 12 * dim_one;
+    }
 }
