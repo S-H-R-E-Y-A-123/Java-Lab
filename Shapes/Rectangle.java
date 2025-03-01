@@ -12,4 +12,11 @@ class Rectangle extends Shape {
     public double calculateArea() {
         return dim_one * dim_two;
     }
+
+    // Method to calculate the perimeter of a rectangle
+    @Override
+    public double calculatePerimeter() {
+        return 2 * (dim_one + dim_two);
+    }
 }
+
