@@ -5,3 +5,10 @@ class Cube extends Shape {
         super("Cube");
         this.dim_one = side;
     }
+
+    // Method to calculate the surface area of a cube
+    @Override
+    public double calculateArea() {
+        return 6 * dim_one * dim_one;
+    }
+}
