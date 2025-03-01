@@ -61,3 +61,43 @@ The Shape Representation module defines the structure of different geometric sha
 - Provides methods to:  
   - Calculate **area** as `base_area + lateral_surface_area`.  
   - Calculate **volume** as `(1/3) × base_area × height`.  
+
+---
+
+# Part 2: Shape Operations  
+
+## Overview:  
+The Shape Operations module provides methods for calculating various properties of geometric shapes. It includes operations such as calculating area, perimeter, and volume for different shape types.  
+
+## Classes and Functions:  
+
+### ShapeCalculator:  
+- The `ShapeCalculator` class provides static methods to perform calculations.  
+- It provides methods to:  
+  - Compute **area** of a given shape.  
+  - Compute **perimeter** of a given shape.  
+  - Compute **volume** for applicable three-dimensional shapes.  
+
+### Utility Functions:  
+- Functions to:  
+  - Validate **input dimensions** to ensure they are positive.  
+  - Convert **units** for different measurement systems.  
+
+---
+
+# Part 3: Main Execution  
+
+## Overview:  
+The Main Execution module acts as the entry point for the program. It integrates the `Shape` and `ShapeCalculator` classes to demonstrate various functionalities such as:  
+- Calculating shape properties.  
+- Handling user input.  
+- Displaying results in a structured format.  
+
+## Classes and Functions:  
+
+### Main:  
+- The `Main` class drives the execution of the program.  
+- It initializes instances of `Shape` and `ShapeCalculator` to:  
+  - Create different shapes.  
+  - Compute their **area**, **perimeter**, and **volume** (if applicable).  
+  - Display results in a formatted output.  
