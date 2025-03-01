@@ -27,4 +27,13 @@ class Deck {
             System.out.println(card);
         }
     }
+
+    // Displays a specific card by index
+    public void printCard(int index) {
+        if (index >= 0 && index < deck.size()) {
+            System.out.println("Card at index " + index + ": " + deck.get(index));
+        } else {
+            System.out.println("Invalid index. Choose between 0 and " + (deck.size() - 1));
+        }
+    }
 }
