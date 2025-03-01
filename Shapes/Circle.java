@@ -5,4 +5,10 @@ class Circle extends Shape {
         super("Circle");
         this.dim_one = radius;
     }
+
+    // Method to calculate the area of a circle
+    @Override
+    public double calculateArea() {
+        return Math.PI * dim_one * dim_one;
+    }
 }
