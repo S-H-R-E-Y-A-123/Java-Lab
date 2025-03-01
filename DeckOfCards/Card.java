@@ -6,4 +6,8 @@ class Card {
         this.rank = rank;
         this.suit = suit;
     }
+
+    public String getRank() {
+        return rank;
+    }
 }
