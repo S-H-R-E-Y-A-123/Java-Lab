@@ -7,4 +7,9 @@ abstract class Shape {
     public Shape(String shapeType) {
         this.shapeType = shapeType;
     }
+
+    // Method to display the shape type
+    public void displayShape() {
+        System.out.println("\nSelected Shape: " + shapeType);
+    }
 }
